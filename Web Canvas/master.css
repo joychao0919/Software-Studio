@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: sans-serif;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#toolbar{
+    width: 300px;
+    height: 502px;
+    padding: 10px;
+    position: fixed;
+    margin-left:800px; 
+    background-color: #c68fd4;
+    border: #7a71d1 1px solid;
+    color: white;
+}
+
+#colors {
+	position: relative;
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	white-space: nowrap;
+}
+
+#range {
+	position: relative;
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+    white-space: nowrap;
+}
+
+#myColor, #myRange {
+	cursor: pointer;
+}
+
+#canvas {
+    position: absolute;
+}
+
+#image_temp {
+    position: absolute;
+}
+

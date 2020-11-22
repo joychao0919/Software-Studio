@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<script src="lib/colorcanvas.js"></script>-->
+    <!--<script src="lib/colorcanvas.input.js"></script>-->
+    <meta charset="UTF-8">
+    <title>Web Painter</title>
+    <link rel="stylesheet" href="master.css">
+    <style type="text/css">
+    </style>
+</head>
+<body style='margin: 0'>
+    <div id="toolbar">
+        <div id="range">Size: 1<input type="range" id="myRange" value="5" min="1" max="100">100</div>
+        <br>
+        <div id="colors">Color: <input type="color" value="#000000" name="myColor" id="myColor"></div>
+        <br>
+        <input type="image" src="paint-brush.png" height="50" width="50" name="brush" id="brush"/>
+        <input type="image" src="eraser.png" height="50" width="50" name="eraser" id="eraser"/>
+
+        <input type="image" src="text.png" height="50" width="50" name="textPic" id="textPic"/>
+        <div class="custom-select" style="width:200px;">Font Size: 
+            <select name="fontSize" id="fontSize" onchange="getFontSize();">
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="24">24</option>
+                <option value="28">28</option>
+                <option value="32">32</option>
+                <option value="36">36</option>
+            </select>
+        </div>
+        <br>
+        <input type="image" src="rectangle_line.png" height="50" width="50" name="rectangle" id="rectangle"/>
+        <input type="image" src="circle_line.png" height="50" width="50" name="circle" id="circle"/>
+        <input type="image" src="triangle_line.png" height="50" width="50" name="triangle" id="triangle"/>
+        <br>
+        <input type="image" src="rectangle.png" height="50" width="50" name="rectangle_fill" id="rectangle_fill"/>
+        <input type="image" src="circle.png" height="50" width="50" name="circle_fill" id="circle_fill"/>
+        <input type="image" src="triangle.png" height="50" width="50" name="triangle_fill" id="triangle_fill"/>
+        <br>
+        <input type="image" src="reset.png" height="50" width="50" name="reset" id="reset"/>
+        <input type="image" src="undo.png" height="50" width="50" name="undo" id="undo"/>
+        <input type="image" src="redo.png" height="50" width="50" name="redo" id="redo"/>
+        <br>
+        <a href="" id="saveLink"><img src="save.png" height="50" width="50"></img></a>
+        <label for="uploadLink">
+        <img src="upload.png" height="50" width="50">
+        <input id="uploadLink" type="file" name="photo" />
+        </img>
+        </label>
+        <br>
+    </div>
+    
+    <canvas id="canvas" style="border:#7a71d1 1px solid;"></canvas>
+    <canvas id="image_temp"></canvas>
+    
+    <script src="canvas.js"></script>
+</body>
+</html>
