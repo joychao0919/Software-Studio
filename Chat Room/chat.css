@@ -1,0 +1,64 @@
+body {
+    color: #fff;
+    background: #d47677;
+}
+.bg2 {
+    background: #ececec; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius:10px;
+    height: 100%;
+}
+.center {
+    display: block;
+    margin-left: 5%;
+    padding: 15px;
+    height: auto;
+}
+.navbar {
+    background: #ececec;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:10px
+}
+#btnLogout {
+    margin-left: 36%;
+}
+.btn {        
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #70c5c0;
+    border: none;
+    width: 70%;
+}
+
+.btn:hover, .btn:focus {
+    background: #50b8b3;
+    outline: none !important;
+}   
+.post_list {
+    width: 40%;
+    float: left;
+    margin-left: 100px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border-radius:10px
+}
+.post-form {
+    width: 35%;
+    height: 300px;
+    margin: 0 auto;
+    color: #7a7a7a;
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+    font-size: 13px;
+    background: #ececec;
+    position: relative;		
+}

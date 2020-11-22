@@ -1,0 +1,201 @@
+body {
+    color: #fff;
+    background: #d47677;
+}
+.bg2 {
+    background: #ececec; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius:10px
+}
+.center {
+    display: block;
+    margin-left: 5%;
+    padding: 15px;
+    height: auto;
+    width: auto;
+}
+.navbar {
+    background: #ececec;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:10px
+}
+.form-control {
+    min-height: 41px;
+    background: #fff;
+    box-shadow: none !important;
+    border-color: #e3e3e3;
+}
+.form-control:focus {
+    border-color: #70c5c0;
+}
+.form-control, .btn {        
+    border-radius: 2px;
+}
+.login-form {
+    width: 350px;
+    margin: 0 auto;
+
+
+    color: #7a7a7a;
+    border-radius: 2px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    background: #ececec;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;	
+    position: relative;		
+}
+.login-form form {
+    color: #7a7a7a;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    font-size: 13px;
+    background: #ececec;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;	
+    position: relative;	
+}
+.login-form h2 {
+    font-size: 22px;
+    margin: 35px 0 25px;
+}
+.login-form .avatar {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: -50px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    z-index: 9;
+    background: #70c5c0;
+    padding: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.login-form .avatar img {
+    width: 100%;
+}	
+.login-form input[type="checkbox"] {
+    margin-top: 2px;
+}
+.login-form .btn {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #70c5c0;
+    border: none;
+    margin-bottom: 20px;
+}
+.login-form #btnGoogle {        
+    font-size: 16px;
+    font-weight: bold;
+    background: #70a4c5;
+    border: none;
+    margin-bottom: 20px;
+}
+.login-form #btnGoogle:hover, .login-form #btnGoogle:focus {
+    background: #507ab8;
+    outline: none !important;
+}
+.login-form .btn:hover, .login-form .btn:focus {
+    background: #50b8b3;
+    outline: none !important;
+}    
+.login-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+.login-form a:hover {
+    text-decoration: none;
+}
+.login-form a {
+    color: #7a7a7a;
+    text-decoration: none;
+}
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+
+a {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+.border{
+	padding: 5px;
+	background: linear-gradient(110deg, #ede1b5 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #8fadd2 34%, #50b8b3 34%);
+	background-size: 400% 400%;
+    height: 400px;
+
+	background-position: 25% 50%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+}
+.inner-cutout{
+	padding: 40px 0;
+	display: block;
+	background-color:#d47677;/*#ff6f69*/
+		
+	margin: 2%;
+	padding-bottom: 40px;
+	height: 300px;
+	background: radial-gradient(#d47677, #e6aaab);
+	background-size: 300%;
+	background-position:50% 50%;
+
+}
+.knockout {
+	
+	vertical-align: middle;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+	font-size:50pt;
+	color: blue;
+	color: #fff;
+	background: linear-gradient(110deg, #ede1b5 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #8fadd2 34%, #50b8b3 34%);
+	background-size: 400%;
+	-webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.knockout{
+		animation: Gradient 5s ease infinite;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 30% 50%
+	}
+	50% {
+		background-position: 25% 50%
+	}
+	100% {
+		background-position: 30% 50%
+	}
+	
+}
+
+.main{
+    width: auto;
+    height: auto;
+	margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 5%;
+
+}
+
+

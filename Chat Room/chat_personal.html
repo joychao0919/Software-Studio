@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+              
+    <title>Chat Room</title>
+              
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="chat_personal.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+              
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+    
+    <script src="config.js"></script>
+    <script src="chat_personal.js"></script>
+
+</head>
+
+
+<body>
+    <div id="custom-alert">
+    </div>
+    <img src="banner.png" alt="banner" class="center">
+    <div class="bg2">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#" id="homebtn">Home</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Chat Mode
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#" id="personalbtn">Personal</a>
+                  <a class="dropdown-item" href="#" id="groupbtn">Group</a>
+                </div>
+            </li>
+            <div id="dynamic-menu">
+                <a class="nav-item nav-link" href="#" id="loginbtn">Login</a>
+            </div>
+            <select name="Choose Friend" id="selectFriend" onchange="getFriend();">
+
+            </select>
+          </div>
+        </div>
+      </nav>
+
+
+    <div style="padding:5px; overflow:auto; background-color:#ffffff; width:35%px; height:300px;" class="talk_list, col-md-6">
+        <div id="talk_list">
+        </div>
+    </div>
+
+    <div class="post-form, col-md-6" style="text-align: center">
+        <h5 class="border-bottom border-gray pb-2 mb-0">Write Something</h5>
+        <textarea class="form-control" rows="5" id="comment" style="resize:none; width:90%; height:100px; margin:0 auto;"></textarea>
+        <div class="media text-muted pt-3">
+            <button id="post_btn" type="button" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+   </div>
+</body>
+
+
+
+
+</html>
